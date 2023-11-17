@@ -1,7 +1,7 @@
 return {
   "telescope.nvim",
   dependencies = {
-    "nvim-telescope/telescope-file-browser.nivm",
+    "nvim-telescope/telescope-file-browser.nvim",
   },
   keys = {
     {
@@ -89,7 +89,7 @@ return {
   config = function(_, opts)
     local telescope = require("telescope")
     local actions = require("telescope.actions")
-    local fb_actions = require("telescope").extensions.file_browser.action
+    local fb_actions = require("telescope").extensions.file_browser.actions
 
     opts.defaults = vim.tbl_deep_extend("force", opts.defaults, {
       wrap_results = true,
